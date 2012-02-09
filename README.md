@@ -3,7 +3,7 @@
 Some samples of Haskell for the beginner that aren't about math, or incredibly
 intimidating.
 
-## How To
+## How
 
 You'll need to download the [Haskell
 Platform](http://hackage.haskell.org/platform/), install it on your system. Then
@@ -15,7 +15,19 @@ Once installed, try running the first program:
 
 You should see that it is, indeed, not so bad to get into Haskell.
 
-## Why?
+If you want to compile the programs, use
+
+    ghc 01_not_so_bad.hs
+
+One thing to note, however, is that by default, ghc compiles statically, and
+does no optimizing. So you might get the impression that Haskell compilers
+always produce huge binaries, and they're slow. Not so. If you want to see a
+smaller binary, use the -dynamic flag. If you want to see more efficient code,
+add the `-O` flag, with a level of optimization. For example,
+
+    ghc -dynamic -O2 01_not_so_bad.hs
+
+## Why
 
 For the average programmer, Haskell might seem like a giant ivory tower of a
 language. In reality, it does the same kinds of things that Python, Ruby, or
