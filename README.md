@@ -22,3 +22,9 @@ language. In reality, it does the same kinds of things that Python, Ruby, or
 Java do, but in a slightly different way. So I thought I would introduce Haskell
 as a plain old language, doing ordinary things, and only later build up to the
 part where it's a super amazing death ray of awesome.
+
+## Further Reading
+
+If these examples are far too simplistic, these might be more to your liking:
+
+[Haskell Notes And Examples](http://www.vex.net/~trebla/haskell/index.xhtml)
