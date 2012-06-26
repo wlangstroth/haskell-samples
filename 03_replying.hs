@@ -13,4 +13,5 @@ replyTo name =
 -- This one's a re-rendering of the second example in Chapter 7 of Real World
 -- Haskell. It demonstrates some more interaction with the command line. You can
 -- think of the $ as a left parenthesis, so `putStrLn $ replyTo input` is the same
--- as `putStrLn (replyTo input)`.
+-- as `putStrLn (replyTo input)`. For a better explanation, see
+-- http://learnyouahaskell.com/higher-order-functions#function-application
