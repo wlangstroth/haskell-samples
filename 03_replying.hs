@@ -8,7 +8,8 @@ replyTo :: String -> String
 replyTo name =
     "Pleased to meet you, " ++ name ++ ".\n" ++
     "Your name contains " ++ letterCount ++ " letters."
-  where letterCount = show (length name)
+  where
+    letterCount = show (length name)
 
 -- This one's a re-rendering of the second example in Chapter 7 of Real World
 -- Haskell. It demonstrates some more interaction with the command line. You can
