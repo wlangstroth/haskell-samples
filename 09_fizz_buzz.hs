@@ -14,7 +14,7 @@ main = runBuzz 100
 -- http://stackoverflow.com/a/6957395/1656903
 --
 -- Note the use of the dot operator (.) to combine functions in a concise,
--- readable way. The action is left-to-right, so (putStrLn . fizzBuzz) is the
+-- readable way. The action is right-to-left, so (putStrLn . fizzBuzz) is the
 -- same as first applying fizzBuzz, then applying putStrLn.
 --
 -- mapM_ is a monadic map over [1..n]. The underscore at the end of the function
