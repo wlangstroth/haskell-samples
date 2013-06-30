@@ -1,9 +1,9 @@
 -- for those of you who enjoyed your algorithm courses, some sorting 101:
 
-import List (insert)
+import Data.List (insert)
 
 insertionSort :: Ord a => [a] -> [a]
-insertionSort = foldl (\ a b -> insert b a) []
+insertionSort = foldl (flip insert) []
 
 -- What? That's crazy! But GHC's merge sort is epic:
 
