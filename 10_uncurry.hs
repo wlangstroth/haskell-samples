@@ -9,6 +9,7 @@
 -- But there's a slick way to do that. Note that '/=' is a binary function that
 -- returns a boolean:
 -- (/=) :: a -> a -> Bool
+--
 -- You can use 'uncurry' to turn that a -> b -> c function into something that
 -- works on pairs! Check out its type signature:
 -- uncurry :: (a -> b -> c) -> (a, b) -> c
@@ -24,5 +25,7 @@ onlyMatches = filter $ uncurry (==)
 
 -- => [(3,3),(6,6)]
 
--- What?!? That's crazy! I just transformed a function!
--- Get down with your bad self.
+-- From there, you can see how it would be easy to join a touple of lists:
+
+merge :: ([a], [a]) -> [a]
+merge = uncurry (++)
