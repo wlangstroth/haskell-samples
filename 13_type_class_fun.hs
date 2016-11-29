@@ -18,10 +18,8 @@ frac d
 instance Show Dimensions where
     show (Dimensions height width) = show height ++ " x " ++ show width
 
--- See the related blog post (http://www.langstroth.net/posts/more-haskell) for
--- more details, but the example is meant to show how type classes are useful
--- even for a fairly mundane task that ordinary programmers might face:
--- formatting numbers.
+-- Strictly speaking, this is an abuse of the type system. So you probably 
+-- shouldn't do this. But it does demonstrate a few concepts quickly.
 -- To try out the example, load into ghci
 -- > :l 13_type_class_fun.hs
 -- > let h = Length 12.2 Inches
